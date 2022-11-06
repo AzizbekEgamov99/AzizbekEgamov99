@@ -1,0 +1,67 @@
+body {
+  background-color: blue;
+  margin: 0;
+  padding: 0;
+}
+.loader {
+  height: 45px;
+  position: absolute;
+  top: 42%;
+  left: 45%;
+}
+.h1{
+  
+}
+.loader span {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  color: rgb(192, 25, 61);
+  border-radius: 50%;
+  transition: 5s;
+  animation: animatsiya 2s infinite;
+}
+.loader h1 {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.loader span:nth-child(1) {
+  animation-delay: 1s;
+}
+.loader span:nth-child(2) {
+  animation-delay: 2s;
+}
+.loader span:nth-child(3) {
+  animation-delay: 3s;
+}
+
+.loader span:nth-child(4) {
+  animation-delay: 4s;
+}
+
+.loader span:nth-child(5) {
+  animation-delay: 5s;
+}
+
+.loader span:nth-child(6) {
+  animation-delay: 6s;
+}
+
+@keyframes animatsiya {
+  0% {
+    border: 1px solid white;
+    transform: translateY(0);
+  }
+  50% {
+    border: 1px solid white;
+    background: rgb(150, 144, 143);
+    transform: translateY(-25px);
+  }
+  100% {
+    border: 1px solid white;
+    background: rgb(6, 213, 65);
+    transform: translateY(0);
+  }
+}
